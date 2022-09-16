@@ -1,0 +1,44 @@
+.btn {
+  display: inline-flex;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+  padding: 14.5px 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  border: 2px solid;
+  border-color: transparent;
+  border-radius: 4px;
+  transition: linear .2s;
+
+  &--transparent {
+    background-color: transparent;
+    border-color: $white;
+  }
+
+  &--white {
+    background-color: $white;
+    color: $green;
+
+    &:hover {
+      border-color: $white;
+      background-color: transparent;
+      color: $white;
+    }
+  }
+
+  &--blue {
+    background-color: $blue;
+    color: $white;
+    &:hover {
+      background-color: $white;
+      border-color: $blue;
+      color: $blue;
+    }
+  }
+}

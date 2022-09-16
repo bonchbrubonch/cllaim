@@ -1,0 +1,30 @@
+.modal{
+  padding: 55px 60px 55px 60px;
+  max-width: 650px !important;
+  border: 2px solid $green;
+  background: $white !important;
+  display: none;
+  &__inner{
+    strong{
+      display: block;
+      margin: 0 0 15px 0;
+      font-size: 32px;
+      line-height: 37px;
+    }
+    p{
+      margin: 0 0 15px 0;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  .title-line{
+    padding: 15px 0 0 0;
+    line-height: 24px;
+    font-weight: 700;
+    &::before{
+      top: 0;
+      left: 0;
+    }
+  }
+  
+}

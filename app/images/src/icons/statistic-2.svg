@@ -1,0 +1,4 @@
+<svg id="SUPPORTED_PAYERS" data-name="SUPPORTED PAYERS" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <path id="Контур_424" data-name="Контур 424" d="M0,0H30V30H0ZM12.5,6.25h5v2.5h-5Zm0,0h5v2.5h-5Z" fill="none"/>
+  <path id="Контур_425" data-name="Контур 425" d="M12,19.25V18H3.263L3.25,23a2.491,2.491,0,0,0,2.5,2.5h17.5a2.491,2.491,0,0,0,2.5-2.5V18H17v1.25ZM24.5,8H19.487V5.5L16.988,3h-5l-2.5,2.5V8H4.5A2.507,2.507,0,0,0,2,10.5v3.75a2.491,2.491,0,0,0,2.5,2.5H12v-2.5h5v2.5h7.5a2.507,2.507,0,0,0,2.5-2.5V10.5A2.507,2.507,0,0,0,24.5,8ZM17,8H12V5.5h5Z" transform="translate(0.5 0.75)" fill="#fff"/>
+</svg>

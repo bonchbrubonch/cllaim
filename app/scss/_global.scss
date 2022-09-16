@@ -1,0 +1,193 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  min-width: 320px;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: 'Raleway', sans-serif;
+  background-color: $white;
+  font-size: 18px;
+  color: $dark;
+}
+
+.container {
+  max-width: 1220px;
+  width: 100%;
+  padding: 0 40px;
+  margin: 0 auto;
+
+  &--main {
+    max-width: 1365px;
+  }
+}
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $dark;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.title-line {
+  display: block;
+  margin: 0 0 13px 0;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 3px;
+    background-color: $green;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -100px;
+  }
+}
+
+.title-underline {
+  position: relative;
+  padding: 0 0 15px 0;
+  margin: 0 0 15px 0;
+  color: $dark;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 70px;
+    height: 1px;
+    background-color: $green;
+
+  }
+}
+
+.section {
+  padding: 60px 0 50px;
+
+  &--grey {
+    background-color: $bg-grey;
+  }
+}
+
+.margin-top {
+  margin: 70px 0 0 0;
+}
+
+/*start pin footer to bottom*/
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+/*end pin footer to bottom*/
+
+/*start accordeon*/
+.accordeon {
+  dl {
+    margin: -1px 0 0 0;
+    border: 1px solid $light-grey;
+    border-left: none;
+    border-right: none;
+  }
+
+  dl.open {
+    position: relative;
+    z-index: 1;
+    border-color: $blue;
+  }
+
+  dt {
+    padding: 20px 40px 20px 0;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    line-height: 24px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 24px;
+      transform: rotate(45deg);
+      right: 20px;
+      width: 10px;
+      height: 10px;
+      border: 2px solid $light-grey;
+      border-top: none;
+      border-left: none;
+      transition: linear .2s;
+    }
+  }
+
+  dt.active::before {
+    transform: rotate(-135deg);
+    border-color: $blue;
+  }
+
+  dd {
+    margin: 0 0 20px 0;
+    line-height: 26px;
+  }
+}
+
+/*end accordeon*/

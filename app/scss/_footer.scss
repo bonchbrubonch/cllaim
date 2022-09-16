@@ -1,0 +1,129 @@
+/*start footer===========*/
+.footer {
+  background-color: $dark;
+  color: $footer-text;
+  font-weight: 300;
+
+  &__inner {
+    padding: 34px 0 47px 0;
+    display: flex;
+  }
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      margin: 0 0 15px 0;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    p {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  .footer__col+.footer__col {
+    margin: 0 0 0 135px;
+  }
+
+  &__title,
+  &__up {
+    margin: 0 0 15px 0;
+    font-weight: 700;
+    font-size: 18px;
+    font-weight: 21px;
+    color: $white;
+  }
+
+  p {
+    margin: 0 0 15px 0;
+    font-size: 14px;
+    line-height: 20px;
+
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  &__col-last {
+    margin-left: auto;
+  }
+
+  &__up {
+    position: relative;
+    padding-left: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 20px;
+      width: 2px;
+      background-color: $green;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: -4px;
+      top: 0;
+      width: 10px;
+      height: 10px;
+      border-left: 2px solid $green;
+      border-top: 2px solid $green;
+      transform: rotate(45deg);
+    }
+  }
+
+  &__list li {
+    margin: 0 0 10px 0;
+  }
+}
+
+/*end footer===========*/
+
+@media (max-width: 1100px){
+  .footer .footer__col+.footer__col {
+    margin-left: 100px;
+  }
+
+  .social-networks li+li {
+    margin-left: 12px;
+  }
+}
+@media (max-width: 900px){
+  .footer__col-last {
+    display: none;
+  }
+
+  .footer .footer__col+.footer__col {
+    margin: 0 0 0 70px;
+  }
+}
+
+@media (max-width: 767px){
+  .footer__inner {
+    flex-direction: column;
+  }
+
+  .footer .footer__col+.footer__col {
+    margin: 0 0 25px 0;
+  }
+  .footer__title {
+    margin: 15px 0 15px 0;
+  }
+}
+
+@media (max-width: 468px){
+  .footer p br {
+    display: none;
+  }
+}

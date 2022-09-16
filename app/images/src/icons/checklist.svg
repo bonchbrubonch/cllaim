@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="checklist" transform="translate(-388 -727)">
+    <g id="Rectangle_29" data-name="Rectangle 29" transform="translate(388 727)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0">
+      <rect width="30" height="30" stroke="none"/>
+      <rect x="0.5" y="0.5" width="29" height="29" fill="none"/>
+    </g>
+    <g id="checklist-2" data-name="checklist" transform="translate(332.002 727)">
+      <path id="Path_19" data-name="Path 19" d="M165.9,215.618a5.608,5.608,0,1,0,5.608,5.608A5.614,5.614,0,0,0,165.9,215.618Zm-.906,8.764-3.036-3,1.236-1.25,1.847,1.826,3.59-3.287,1.187,1.3Z" transform="translate(-94.414 -202.984)" fill="#390"/>
+      <path id="Path_20" data-name="Path 20" d="M159.7,2.47h-3.619l-.2-.605a2.709,2.709,0,0,0-5.149,0l-.2.605h-3.619V5.4H159.7Z" transform="translate(-81.823)" fill="#390"/>
+      <path id="Path_21" data-name="Path 21" d="M79.632,66.495v3.257h-16.3V66.495H60V92.6H82.967v-26.1Zm-8.15,21.712a7.366,7.366,0,1,1,7.366-7.366A7.374,7.374,0,0,1,71.482,88.207Z" transform="translate(0 -62.599)" fill="#390"/>
+    </g>
+  </g>
+</svg>

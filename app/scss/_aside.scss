@@ -1,0 +1,28 @@
+.aside {
+  width: 100%;
+  &--blog,
+  &--article,
+  &--solution,
+  &--payers,
+  &--state{
+    max-width: 275px;
+  }
+  &__inner {
+    top: 100px;
+    position: sticky;
+  }
+  &__bottom-link{
+    display: inline-flex;
+    margin: 10px 0 0 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+    color: $blue;
+    text-decoration: underline;
+    transition: linear .2s;
+    &:hover{
+      color: $green;
+    }
+  }
+}

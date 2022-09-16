@@ -1,0 +1,52 @@
+/*start breadcrumbs=============*/
+.breadcrumbs {
+  position: relative;
+  margin: 15px 0 60px 0;
+  width: 100%;
+  background-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  z-index: 1;
+  &__inner {
+    overflow: hidden;
+  }
+
+  &__list {
+    li {
+      display: inline-block;
+      position: relative;
+
+      &+li {
+        padding-left: 15px;
+
+        &::before {
+          content: ">";
+          position: absolute;
+          left: 2px;
+          top: 0;
+          color: $white;
+        }
+      }
+
+      &:last-child {
+        span {
+          color: $white;
+          transition: linear .2s;
+          opacity: .7;
+        }
+      }
+    }
+
+    a {
+      color: $white;
+      transition: linear .2s;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+/*end breadcrumbs=============*/

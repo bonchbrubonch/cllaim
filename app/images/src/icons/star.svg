@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="Сгруппировать_62" data-name="Сгруппировать 62" transform="translate(-570 -423)">
+    <g id="Прямоугольник_37" data-name="Прямоугольник 37" transform="translate(570 423)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0">
+      <rect width="20" height="20" stroke="none"/>
+      <rect x="0.5" y="0.5" width="19" height="19" fill="none"/>
+    </g>
+    <g id="star" transform="translate(572 413.204)">
+      <g id="Сгруппировать_60" data-name="Сгруппировать 60" transform="translate(0 11.796)">
+        <path id="Контур_16" data-name="Контур 16" d="M15.977,17.592a.469.469,0,0,0-.378-.319l-4.96-.721L8.42,12.057a.469.469,0,0,0-.841,0L5.361,16.552.4,17.273a.469.469,0,0,0-.26.8l3.589,3.5-.847,4.94a.469.469,0,0,0,.68.494L8,24.672,12.436,27a.469.469,0,0,0,.68-.494l-.847-4.94,3.589-3.5A.469.469,0,0,0,15.977,17.592Z" transform="translate(0 -11.796)" fill="#390"/>
+      </g>
+    </g>
+  </g>
+</svg>

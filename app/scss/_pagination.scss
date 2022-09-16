@@ -1,0 +1,78 @@
+/*start pagination==========*/
+.pagination {
+  margin: 15px 0 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: $policy-text;
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  li {
+
+    &+li {
+      margin-left: 5px;
+    }
+  }
+
+  a,
+  span {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    border: 1px solid;
+    border-color: transparent;
+
+    &.active {
+      border-color: $green;
+      color: $green;
+      font-weight: 700;
+    }
+  }
+
+  &__btn-next,
+  &__btn-prev,
+  &__btn-end,
+  &__btn-start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+  }
+
+  &__btn-prev,
+  &__btn-start {
+    transform: rotate(180deg);
+  }
+  li .pagination__btn-start {
+    display: none;
+  }
+
+}
+
+/*end pagination==========*/
+
+@media (max-width: 1100px){
+  .pagination {
+    margin: 25px 0 0;
+  }
+}
+@media (max-width: 767px){
+  .pagination a,
+  .pagination span,
+  .pagination button {
+    width: 30px;
+    height: 30px;
+  }
+}

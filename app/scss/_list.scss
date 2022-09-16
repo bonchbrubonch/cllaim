@@ -1,0 +1,233 @@
+/*start list-dot*/
+.list-dot {
+  li {
+    position: relative;
+  }
+
+  li::before {
+    position: absolute;
+    left: 0;
+    content: "";
+    background-color: $green;
+    border-radius: 50%;
+  }
+
+  &--aside {
+    li {
+      margin: 0 0 10px 0;
+      padding: 0 0 0 15px;
+      font-size: 13px;
+      line-height: 15px;
+    }
+
+    li::before {
+      top: 6px;
+      width: 6px;
+      height: 6px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &--policy {
+    margin: 0 0 0 27px;
+
+    li {
+      margin: 0 0 12px 0;
+      padding-left: 23px;
+    }
+
+    li::before {
+      top: 11px;
+      width: 8px;
+      height: 8px;
+    }
+  }
+
+  &--state {
+    margin: 10px 0 10px 0;
+
+    li {
+      line-height: 30px;
+      padding-left: 15px;
+    }
+
+    li::before {
+      top: 13px;
+      width: 6px;
+      height: 6px;
+    }
+  }
+
+  &--white {
+    li{
+      margin: 0 0 17px 0;
+      padding: 0 0 0 25px;
+      line-height: 30px;
+    }
+    li::before {
+      background-color: $white;
+      top: 11px;
+      width: 8px;
+      height: 8px;
+    }
+  }
+}
+
+/*end list-dot*/
+
+/*start list-decimal */
+.list-decimal {
+  counter-reset: counter;
+  list-style: none;
+  padding: 0;
+
+  li {
+    counter-increment: counter;
+    position: relative;
+
+  }
+
+  li::before {
+    font-family: 'Montserrat', sans-serif;
+    content: counter(counter);
+    color: $white;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 3px;
+    background: $green;
+    border-radius: 50%;
+    text-align: center;
+  }
+
+  &--solution {
+    margin: 0 0 0 -30px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    li {
+      padding: 0 0 0 75px;
+      margin: 0 0 25px 30px;
+      flex: calc(50% - 30px);
+
+      strong {
+        display: block;
+        margin: 0 0 15px 0;
+      }
+
+      p {
+        margin: 0;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
+    li::before {
+      width: 60px;
+      height: 60px;
+      font-size: 26px;
+      line-height: 60px;
+    }
+  }
+}
+
+/*end list-decimal */
+
+/*start list-border*/
+.list-border {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  li {
+    background-color: $white;
+    border: 2px solid $green;
+
+    strong {
+      font-weight: 700;
+    }
+
+    p {
+      margin: 10px 0 0 0;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &--advantages {
+    margin: 40px 0 0 -55px;
+
+    li {
+      padding: 30px;
+      margin: 0 0 20px 55px;
+      flex: calc(50% - 55px);
+    }
+  }
+
+  &--solution,
+  &--payers,
+  &--state {
+    justify-content: space-between;
+    margin: 25px 0 0 -55px;
+
+    li {
+      max-width: 365px;
+      padding: 28px 20px 25px 20px;
+      margin: 0 0 30px 55px;
+      flex: calc(50% - 55px);
+    }
+  }
+
+}
+/*end list-border*/
+
+/*start list-advantage*/
+.list-advantage {
+  margin: 30px 0 0 0;
+
+  &__item {
+    position: relative;
+    padding: 0 0 0 45px;
+    margin: 0 0 30px 0;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__box {
+    strong {
+      display: block;
+      margin: 0 0 10px 0;
+    }
+  }
+
+  &--white {
+    max-width: 520px;
+    color: white;
+    li {
+      margin: 0 0 34px 0;
+      padding: 0 0 0 50px;
+      position: relative;
+    }
+
+    strong {
+      font-weight: 700;
+      line-height: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 26px;
+      margin: 10px 0 0 0;
+    }
+
+  }
+}
+/*end list-advantage*/
